@@ -8,9 +8,9 @@ interface Servant {
     skills: Array<Skill>
     appends: Array<Skill>
     classIcon: string
-    ascensionMaterials: MaterialList
-    skillMaterials: MaterialList
-    appendMaterials: MaterialList
+    ascensionMaterials: Array<MaterialList>
+    skillMaterials: Array<MaterialList>
+    appendMaterials: Array<MaterialList>
 }
 
 interface Skill {
