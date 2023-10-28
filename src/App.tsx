@@ -20,7 +20,7 @@ function App() {
         setSearchInit(false);
         setSearchLoading(true);
         console.log("search");
-        fetch('/api/fgo/servant/search/' + searchValue)
+        fetch('/api/fgo/v1/servant?query=' + searchValue)
             .then(res => res.json())
             .then(data => {
                 setSearchResults(data);
@@ -40,7 +40,7 @@ function App() {
         setPlannerInit(false)
         setPlannerLoading(true)
 
-        fetch('api/fgo/servant/' + id)
+        fetch('api/fgo/v1/servant/' + id)
             .then(res => res.json())
             .then(data => {
                 setServant({
